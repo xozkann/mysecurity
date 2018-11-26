@@ -12,12 +12,12 @@
                     </tr>
                 </thead>
                 <tbody>
-                <?php foreach($kullanicilar as $yetkilicek) { ?>
+                <?php foreach($ihbarlar as $ihbarcek) { ?>
                     <tr>
-                        <td><?php echo $yetkilicek['vt_id']; ?></td>
-                        <td><?php echo $yetkilicek['vt_alan_adi']; ?></td>
-                        <td><?php echo $yetkilicek['vt_sunucu_ip']; ?></td>
-                        <td><?php echo $yetkilicek['vt_tarih'] ?></td>
+                        <td><?php echo $ihbarcek['vt_id']; ?></td>
+                        <td><?php echo $ihbarcek['vt_alan_adi']; ?></td>
+                        <td><?php echo $ihbarcek['vt_sunucu_ip']; ?></td>
+                        <td><?php echo $ihbarcek['vt_tarih'] ?></td>
                     </tr>
                 <?php } ?>
                 </tbody>
