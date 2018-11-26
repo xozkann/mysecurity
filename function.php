@@ -25,8 +25,7 @@
                 $result = curl_exec($ch);
                 curl_close ($ch);
                 if(strstr($result, "2")) {
-                  echo file_get_contents('<?php echo 'http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['SCRIPT_NAME'], 0, 12); ?>resources/control.php?access_denied');
-                  $ch = curl_init('<?php echo 'http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['SCRIPT_NAME'], 0, 12); ?>resources/form.php');
+				  $ch = curl_init('<?php echo 'http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['SCRIPT_NAME'], 0, 12); ?>resources/form.php');
                   curl_setopt_array($ch, [
                   CURLOPT_RETURNTRANSFER => true,
                   CURLOPT_POST => true,
@@ -40,6 +39,8 @@
                   $source = curl_exec($ch);
                   curl_close($ch);
                   echo $source;
+                  echo file_get_contents('<?php echo 'http://' . $_SERVER['HTTP_HOST'] . substr($_SERVER['SCRIPT_NAME'], 0, 12); ?>resources/control.php?access_denied');
+				  exit;
                 }
               </textarea>
             </div>
