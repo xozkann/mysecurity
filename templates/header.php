@@ -103,6 +103,9 @@ $kullanicicek = $kullanicisor->fetch(PDO::FETCH_ASSOC);
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="licenses.php">Lisanslar</a></li>
                 </ul>
+				<ul class="nav navbar-nav navbar-left">
+                    <li><a href="warnings.php">İhbarlar</a></li>
+                </ul>
 		<ul class="nav navbar-nav navbar-left">
                     <li><a href="function.php">Fonksiyon Kodu</a></li>
                 </ul>
