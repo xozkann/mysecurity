@@ -1,12 +1,25 @@
 <?php
-require_once 'connect.php';
+require_once 'sql-data.php';
 
 if (isset($_POST['submit'])){
+
+  foreach ($ihbarlar as $ihbarcek) {
+    if ($ihbarcek['vt_alan_adi']==$_POST['vt_alan_adi']) {
+      $insert = $db->prepare("UPDATE vt_ihbarlar SET
+        vt_sunucu_ip=:sunucu_ip,
+        vt_tarih=:tarih
+      ");
+
+      $kaydet = $insert->execute(array(
+        'sunucu_ip' => $_POST['sunucu_ip'],
+        'tarih' => $_POST['tarih']
+      ));
+    }
+  }
 
   if (empty($_POST['alan_adi'] && $_POST['sunucu_ip'] && $_POST['tarih'])) {
     exit;
   }
-
   $insert = $db->prepare("INSERT INTO vt_ihbarlar SET
     vt_alan_adi=:alan_adi,
     vt_sunucu_ip=:sunucu_ip,
