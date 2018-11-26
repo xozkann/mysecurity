@@ -59,6 +59,17 @@ CREATE TABLE `vt_lisanslar` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
+-- Tablo için tablo yapısı `vt_ihbarlar`
+--
+
+CREATE TABLE `vt_ihbarlar` (
+  `vt_id` int(11) NOT NULL,
+  `vt_alan_adi` varchar(255) NOT NULL,
+  `vt_sunucu_ip` varchar(255) NOT NULL,
+  `vt_tarih` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
 -- Dökümü yapılmış tablolar için indeksler
 --
 
@@ -75,6 +86,12 @@ ALTER TABLE `vt_lisanslar`
   ADD PRIMARY KEY (`vt_id`);
 
 --
+-- Tablo için indeksler `vt_ihbarlar`
+--
+ALTER TABLE `vt_ihbarlar`
+  ADD PRIMARY KEY (`vt_id`);  
+  
+--
 -- Dökümü yapılmış tablolar için AUTO_INCREMENT değeri
 --
 
@@ -83,12 +100,19 @@ ALTER TABLE `vt_lisanslar`
 --
 ALTER TABLE `vt_kullanicilar`
   MODIFY `vt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  
 
 --
 -- Tablo için AUTO_INCREMENT değeri `vt_lisanslar`
 --
 ALTER TABLE `vt_lisanslar`
   MODIFY `vt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  
+--
+-- Tablo için AUTO_INCREMENT değeri `vt_ihbarlar`
+--
+ALTER TABLE `vt_ihbarlar`
+  MODIFY `vt_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;  
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
