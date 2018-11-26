@@ -8,7 +8,7 @@ if (isset($_POST['submit'])){
       $insert = $db->prepare("UPDATE vt_ihbarlar SET
         vt_sunucu_ip=:sunucu_ip,
         vt_tarih=:tarih
-      ");
+      WHERE vt_id = {$ihbarcek['vt_id']}");
 
       $kaydet = $insert->execute(array(
         'sunucu_ip' => $_POST['sunucu_ip'],
