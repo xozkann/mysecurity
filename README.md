@@ -12,5 +12,8 @@ SSL ve Mobil uyumlu hata sayfası.
 Lisans Sorgulama Sistemi ve Lisans API'si. (Sorgulama Sistemi örnek kodlama ile verilecektir. Tasarım yapılmayacaktır.)
  
 <b>(26.11.2018)</b><font color="red">*</font><br>
-İhbar bilgisi. (Lisanssız kullanan sitenin alan adı, sunucu ip adresi ve kullandığı tarih/saat.)<br><br>
+İhbar bilgisi. (Lisanssız kullanan sitenin alan adı, sunucu ip adresi ve kullandığı tarih/saat.)
+
+<b>(27.11.2018)</b><font color="red">*</font><br>
+Lisans Sorgulama sayfası eklendi.<br><br>
 <i>...panel yapımı devam etmekte, her yapılan sistemde ekran görüntüsü paylaşılacaktır.</i>
