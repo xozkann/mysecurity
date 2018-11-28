@@ -1,3 +1,5 @@
+Destekte bulunmak için admin@bugraozkan.com.tr eposta adresine posta gönderebilirsiniz. (Zorunlu Değil.)
+<br><hr>
 Demo sistem için: http://bugraozkan.com.tr/mysecurity |
 E-Posta: admin@bugraozkan.com.tr -
 Şifre: demo<br><hr>
