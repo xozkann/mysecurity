@@ -22,7 +22,7 @@ if ($ihbar > 0) {
   $mail->SetFrom($mail->Username, "MySecurity");
   $mail->AddAddress("epostaadresin@gmail.com"); // Gönderilecek E-Posta
   $mail->Subject = "MySecurity | İhbar";
-  $mail->Body = "Merhaba,<br>MySecurity lisans sisteminiz üzerinde gözüken toplam <b>".$kullanici."</b> adet ihbar var. Panele giriş yapıp tüm ihbarları kontrol edebilirsiniz.<br><hr><a href=".$_SERVER['HTTP_HOST'].substr($_SERVER['SCRIPT_NAME'], 0, 12).">Panele giriş yap!</a><br><i>(Bu e-posta Cron yapılandırılması tarafından gönderilmiştir.)</i>";
+  $mail->Body = "Merhaba,<br>MySecurity lisans sisteminiz üzerinde gözüken toplam <b>".$ihbar."</b> adet ihbar var. Panele giriş yapıp tüm ihbarları kontrol edebilirsiniz.<br><hr><a href=".$_SERVER['HTTP_HOST'].substr($_SERVER['SCRIPT_NAME'], 0, 12).">Panele giriş yap!</a><br><i>(Bu e-posta Cron yapılandırılması tarafından gönderilmiştir.)</i>";
   if(!$mail->Send()){
     echo $mail->ErrorInfo;
   }
