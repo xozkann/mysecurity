@@ -17,5 +17,8 @@ Lisans Sorgulama Sistemi ve Lisans API'si. (Sorgulama Sistemi örnek kodlama ile
 İhbar bilgisi. (Lisanssız kullanan sitenin alan adı, sunucu ip adresi ve kullandığı tarih/saat.)
 
 <b>(27.11.2018)</b><font color="red">*</font><br>
-Lisans Sorgulama sayfası eklendi.<br><br>
+Lisans Sorgulama sayfası eklendi.
+
+<b>(30.11.2018)</b><font color="red">*</font><br>
+E-Posta ile bildirim eklendi. <i>(Ayar manuel yapılmaktadır. "resources/cron.php" içinden ayarlama yapabilirsiniz.)</i><br><br>
 <i>...panel yapımı devam etmekte, her yapılan sistemde ekran görüntüsü paylaşılacaktır.</i>
